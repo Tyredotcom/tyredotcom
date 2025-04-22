@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tire Dot Com offers top-quality tires, rims, and car services at competitive prices. Visit us for expert wheel alignment, balancing, and more!"
+    />
+    <meta
+      name="keywords"
+      content="tires, rims, car services, tire shop, wheel alignment, oil change"
+    />
+    <title>Home - Tire Dot Com</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./Images/favicon.png" type="image/jpeg" />
+    <!-- Firebase App (the core Firebase SDK) -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<!-- Firebase Realtime Database -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <!-- Navbar -->
+      <nav>
+        <div class="navbar-container">
+          <!-- Logo Section -->
+          <div class="logo">
+            <a href="index.html">
+              <img src="./Images/logo.jpeg" alt="Logo" class="logo-image" />
+              <!-- Replace with your logo image path -->
+              <h1>Tire Dot Com</h1>
+            </a>
+          </div>
+          <div class="hamburger" id="hamburger">&#9776;</div>
+
+          <!-- Navigation Links -->
+          <ul id="nav-links">
+            <li><a href="index.html" class="nav-links active">Home</a></li>
+            <li><a href="about.html" class="nav-links">About Us</a></li>
+            <li><a href="product.html" class="nav-links">Products</a></li>
+            <li><a href="service.html" class="nav-links">Services</a></li>
+            <li><a href="#feedback" class="nav-links">Feedback</a></li>
+            <li><a href="#contact" class="nav-links">Contact Us</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <h1>Welcome to Our Tire Shop</h1>
+      <p>
+        Your one-stop destination for high-quality tires and excellent service.
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Tire Dot Com, your one-stop destination for premium quality
+        tires and exceptional customer service. With years of experience in the ... <a href="about.html" class="seemore">See More</a>
+      </p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="product-list">
+        <!-- Tires -->
+         <a href="product.html" class="subproduct">
+        <div class="product-item">
+          <h3>Tires</h3>
+          <p>
+            Wide range of tires for all types of vehicles: sedans, SUVs, trucks,
+            and more.
+          </p>
+          <!-- Product Example -->
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20get%20more%20details%20about%20Tires"
+            >Order Now</a
+          >
+        </a>
+        </div>
+
+      
+        <!-- Alloy Rims -->
+        <div class="product-item">
+          <a href="product.html" class="subproduct">
+          <h3>Alloy Rims</h3>
+          <p>
+            High-quality alloy rims in various sizes and styles to enhance your
+            vehicle's look and performance.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20get%20more%20details%20about%20AlloyRims"
+            >Order Now</a
+          >
+          </a>
+        </div>
+
+        
+        <!-- Rims -->
+        <div class="product-item">
+          <a href="product.html" class="subproduct">
+          <h3>Rims</h3>
+          <p>
+            Durable steel and aluminum rims for all vehicle models, ensuring
+            safety and style.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20get%20more%20details%20about%20Rims"
+            >Order Now</a
+          >
+          </a>
+        </div>
+
+        
+        <!-- Tubes -->
+        <div class="product-item">
+          <a href="product.html" class="subproduct">
+          <h3>Tubes</h3>
+          <p>
+            Reliable inner tubes for all types of tires, offering excellent
+            durability and performance.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20get%20more%20details%20about%20Tubes"
+            >Order Now</a
+          >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <!-- Wheel Alignment -->
+        <div class="service-item">
+          <a href="service.html" class="subservice">
+          <h3>Wheel Alignment</h3>
+          <p>
+            Precise wheel alignment services to ensure your vehicle runs
+            straight and smooth.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20get%20more%20details%20about%20WheelAlignment"
+            >Order Now</a
+          >
+        </a>
+        </div>
+
+        <!-- Wheel Balancing -->
+        <div class="service-item">
+          <a href="service.html" class="subservice">
+          <h3>Wheel Balancing</h3>
+          <p>
+            Professional wheel balancing to reduce vibrations and improve tire
+            longevity.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20get%20more%20details%20about%20WheelBalancing"
+            >Order Now</a
+          >
+        </a>
+        </div>
+
+        <!-- Oil Change -->
+        <div class="service-item">
+          <a href="service.html" class="subservice">
+          <h3>Oil Change</h3>
+          <p>
+            High-quality oil change services to keep your engine running
+            smoothly.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20get%20more%20details%20about%20OilChange"
+            >Order Now</a
+          >
+          </a>
+        </div>
+
+        <!-- Mechanical Work -->
+        <div class="service-item">
+          <a href="service.html" class="subservice">
+          <h3>Mechanical Work</h3>
+          <p>
+            Comprehensive mechanical repairs and maintenance for all types of
+            vehicles.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20get%20more%20details%20about%20MechanicalWork"
+            >Order Now</a
+          >
+          </a>
+        </div>
+
+        <!-- Suspension Work -->
+        <div class="service-item">
+          <a href="service.html" class="subservice">
+          <h3>Suspension Work</h3>
+          <p>
+            Expert suspension repairs to ensure your vehicle handles well and
+            provides a comfortable ride.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20came%20across%20your%20website%20and%20would%20like%20to%20get%20more%20details%20about%20SuspensionWork"
+            >Order Now</a
+          >
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <form id="feedback-form">
+        <label for="feedback-message">Your Comment:</label>
+        <textarea
+          id="feedback-message"
+          name="feedback-message"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Comments Display Section -->
+      <div id="comments-section">
+        <!-- New comments will be appended here -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="footer-info">
+          <div class="contact-info">
+            <p>
+              <strong>Phone:</strong>
+              <a href="https://wa.me/+923147482300">+92 3147482300</a>
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:tyredotcom123@gmail.com"
+                >tyredotcom123@gmail.com</a
+              >
+            </p>
+            <p>
+              <strong>Facebook:</strong>
+              <a href="https://www.facebook.com/TyreDotCom" target="_blank"
+                >Tyredotcom/facebook</a
+              >
+            </p>
+            <p>
+              <strong>Instagram:</strong>
+              <a href="https://www.instagram.com/tyre_dot_com/" target="_blank"
+                >Tyredotcom/instagram</a
+              >
+            </p>
+            <p>
+              <strong>Location:</strong>
+              <a
+                href="https://maps.app.goo.gl/ooRnMvSTfrHcHRPV9"
+                target="_blank"
+                >Find us on Google Maps</a
+              >
+            </p>
+          </div>
+          <p class="copyright">&copy; 2024 Tire Shop. All rights reserved.</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script type="module" src="script.js"></script>
+  
+</html>

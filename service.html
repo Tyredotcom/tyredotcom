@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover Tire Dot Com — your trusted tire shop offering high-quality tires, expert services, and personalized customer support. Shop top brands and keep your vehicle road-ready with confidence."
+    />
+    <meta
+      name="keywords"
+      content="tires, rims, car services, tire shop, wheel alignment, oil change, Tire Dot Com, tire shop, quality tires, top tire brands, tire installation services, tire maintenance, all-season tires, performance tires, affordable tires, trusted tire store, professional tire service, tire balancing and alignment, best tire shop near me"
+    />
+    <title>Services - Tire Dot Com</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./Images/favicon.png" type="image/jpeg" />
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <!-- Firebase Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <!-- Navbar -->
+      <nav>
+        <div class="navbar-container">
+          <!-- Logo Section -->
+          <div class="logo">
+            <a href="index.html">
+              <img src="./Images/logo.jpeg" alt="Logo" class="logo-image" />
+              <!-- Replace with your logo image path -->
+              <h1>Tire Dot Com</h1>
+            </a>
+          </div>
+          <div class="hamburger" id="hamburger">&#9776;</div>
+
+          <!-- Navigation Links -->
+          <ul id="nav-links">
+            <li><a href="index.html" class="nav-links">Home</a></li>
+            <li><a href="about.html" class="nav-links">About Us</a></li>
+            <li><a href="product.html" class="nav-links">Products</a></li>
+            <li><a href="service.html" class="nav-links active">Services</a></li>
+            <li><a href="#feedback" class="nav-links">Feedback</a></li>
+            <li><a href="#contact" class="nav-links">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="services">
+      <h2>Our Services</h2>
+
+      <!-- Wheel Alignment -->
+      <div class="product-row">
+        <div class="product-image">
+          <img src="./Images/alignment.png" alt="Wheel Alignment" />
+        </div>
+        <div class="product-content">
+          <h3>Wheel Alignment</h3>
+          <p>
+            We offer precise wheel alignment services to ensure your vehicle
+            travels straight and handles smoothly. Correct alignment increases
+            fuel efficiency, prolongs tire life, and improves driver safety. Our
+            advanced computerized systems guarantee pinpoint accuracy.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Wheel%20Alignment"
+            >Order Now</a
+          >
+        </div>
+      </div>
+
+      <!-- Wheel Balancing -->
+      <div class="product-row">
+        <div class="product-image">
+          <img src="./Images/balancing.png" alt="Wheel Balancing" />
+        </div>
+        <div class="product-content">
+          <h3>Wheel Balancing</h3>
+          <p>
+            Smooth out your ride with our professional wheel balancing service.
+            Unbalanced wheels can lead to vibrations, uneven tire wear, and
+            increased fuel consumption. We use high-tech machines to perfectly
+            balance your tires for optimal performance.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Wheel%20Balancing"
+            >Order Now</a
+          >
+        </div>
+      </div>
+
+      <!-- Oil Change -->
+      <div class="product-row">
+        <div class="product-image">
+          <img src="./Images/oil_change.png" alt="Oil Change" />
+        </div>
+        <div class="product-content">
+          <h3>Oil Change</h3>
+          <p>
+            Keep your engine clean and running efficiently with our high-quality
+            oil change service. We provide synthetic, semi-synthetic, and
+            mineral oils depending on your car's requirements. Our team ensures
+            quick and clean service with filter checks.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Oil%20Change"
+            >Order Now</a
+          >
+        </div>
+      </div>
+
+      <!-- Mechanical Work -->
+      <div class="product-row">
+        <div class="product-image">
+          <img src="./Images/mechanical.png" alt="Mechanical Work" />
+        </div>
+        <div class="product-content">
+          <h3>Mechanical Work</h3>
+          <p>
+            From engine diagnostics to brake services and general repairs, our
+            mechanical team is trained to handle it all. We diagnose and fix
+            issues accurately to keep your car in top shape, using high-quality
+            parts and trusted techniques.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Mechanical%20Work"
+            >Order Now</a
+          >
+        </div>
+      </div>
+
+      <!-- Suspension Work -->
+      <div class="product-row">
+        <div class="product-image">
+          <img src="./Images/suspension.png" alt="Suspension Work" />
+        </div>
+        <div class="product-content">
+          <h3>Suspension Work</h3>
+          <p>
+            Ensure a comfortable and controlled ride with our suspension
+            services. We repair shocks, struts, springs, and other suspension
+            components to restore stability, especially on rough roads. Let us
+            help you ride smoother and safer.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Suspension%20Work"
+            >Order Now</a
+          >
+        </div>
+      </div>
+
+      <!-- Other Services -->
+      <div class="product-row">
+        <div class="product-image">
+          <img src="./Images/services.png" alt="Other Services" />
+        </div>
+        <div class="product-content">
+          <h3>Other Services</h3>
+          <p>
+            In addition to core services, we offer brake pad replacements,
+            battery checks & replacements, A/C servicing, and general auto
+            inspections. We ensure your vehicle is road-ready in all aspects —
+            just ask, and we’ve got the solution.
+          </p>
+          <a
+            class="order-button"
+            href="https://wa.me/923147482300?text=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20Additional%20Services"
+            >Order Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <form id="feedback-form">
+        <label for="feedback-message">Your Comment:</label>
+        <textarea
+          id="feedback-message"
+          name="feedback-message"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <!-- Comments Display Section -->
+      <div id="comments-section">
+        <!-- New comments will be appended here -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="footer-info">
+          <div class="contact-info">
+            <p>
+              <strong>Phone:</strong>
+              <a href="https://wa.me/+923147482300">+92 3147482300</a>
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:tyredotcom123@gmail.com"
+                >tyredotcom123@gmail.com</a
+              >
+            </p>
+            <p>
+              <strong>Facebook:</strong>
+              <a href="https://www.facebook.com/TyreDotCom" target="_blank"
+                >Tyredotcom/facebook</a
+              >
+            </p>
+            <p>
+              <strong>Instagram:</strong>
+              <a href="https://www.instagram.com/tyre_dot_com/" target="_blank"
+                >Tyredotcom/instagram</a
+              >
+            </p>
+            <p>
+              <strong>Location:</strong>
+              <a
+                href="https://maps.app.goo.gl/ooRnMvSTfrHcHRPV9"
+                target="_blank"
+                >Find us on Google Maps</a
+              >
+            </p>
+          </div>
+          <p class="copyright">&copy; 2024 Tire Shop. All rights reserved.</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script type="module" src="script.js"></script>
+</html>
